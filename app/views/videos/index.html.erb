@@ -1,0 +1,7 @@
+<h1>All <%= @all_videos.size %> videos</h1>
+<ul>
+    <% @all_videos.each do | video | %>
+        <li><%= link_to video.video_id, video_path( video ) %></li>
+    <% end %>
+</ul>
+
